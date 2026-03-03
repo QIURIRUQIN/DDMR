@@ -1,0 +1,11 @@
+einops==0.8.1
+matplotlib==3.9.2
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.15.3 
+sktime==0.37.0
+sympy==1.13.1
+torch==2.5.1+cu124
+tqdm==4.66.2
+# only test latest version of sktime
+sktime==0.37.0; python_version == "3.12.3"
