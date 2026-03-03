@@ -70,7 +70,7 @@ pip install -r requirements.txt
 python run.py \
     --is_training 1 \
     --model_id test \
-    --model xPatch \
+    --model DDMR \
     --data ETTh1 \
     --root_path ./dataset \
     --data_path ETTh1.csv \
@@ -90,7 +90,7 @@ python run.py \
 python run.py \
     --is_training 0 \
     --model_id test \
-    --model xPatch \
+    --model DDMR \
     --data ETTh1 \
     --root_path ./dataset \
     --data_path ETTh1.csv \
@@ -105,7 +105,7 @@ python run.py \
 ### 基础配置
 - `--is_training`: 训练模式（1）或测试模式（0）
 - `--model_id`: 模型标识符
-- `--model`: 模型名称（xPatch）
+- `--model`: 模型名称（DDMR）
 - `--data`: 数据集名称
 - `--root_path`: 数据集根目录
 - `--data_path`: 数据文件路径
@@ -161,7 +161,7 @@ python run.py \
 - **PEMS**: 交通流量数据集
 - **custom**: 自定义数据集
 
-## 模型架构
+## DDMR 模型架构
 
 模型主要包含以下组件：
 
@@ -193,4 +193,5 @@ python run.py \
 ## 联系方式
 
 如有问题或建议，请通过 Issue 联系。
+
 
