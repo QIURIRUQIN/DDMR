@@ -1,8 +1,8 @@
-# xPatch - 时间序列预测模型
+# DDMR - 时间序列预测模型
 
 ## 项目简介
 
-xPatch 是一个基于 Transformer 架构的时间序列预测模型，采用多尺度分解和混合专家（MoE）机制，能够有效捕捉时间序列中的长期和短期依赖关系。
+DDMR 是一个基于 Transformer 和 MLP 混合架构的时间序列预测模型，采用多尺度分解和混合专家（MoE）机制，能够有效捕捉时间序列中的长期和短期依赖关系。
 
 ## 主要特性
 
@@ -181,21 +181,6 @@ python run.py \
 - **MSE** (Mean Squared Error): 均方误差
 - **MAE** (Mean Absolute Error): 平均绝对误差
 
-评估结果会保存在 `result.txt` 文件中。
-
-## 输出文件
-
-- **模型检查点**: `./checkpoints/{setting}/checkpoint.pth`
-- **测试结果**: `./test_results/{setting}/`
-- **评估指标**: `result.txt`
-
-## 注意事项
-
-1. 确保数据集格式正确，CSV 文件应包含时间戳和特征列
-2. 根据数据集调整 `--enc_in` 参数（特征维度）
-3. 根据硬件配置调整 `--batch_size` 和 `--num_workers`
-4. 使用 GPU 训练时，确保已正确安装 CUDA 版本的 PyTorch
-5. 模型使用固定随机种子（2026）以确保可复现性
 
 ## 许可证
 
@@ -208,3 +193,4 @@ python run.py \
 ## 联系方式
 
 如有问题或建议，请通过 Issue 联系。
+
